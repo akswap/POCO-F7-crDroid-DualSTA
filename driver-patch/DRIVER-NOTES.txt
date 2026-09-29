@@ -1,0 +1,24 @@
+POCO F7 / onyx crDroid 12.12 Dual-STA driver backup
+
+Exact working image:
+  images/init_boot_b_crDroid_DualSTA_WORKING.img
+
+The working image is byte-identical to init_boot_crDroid_DualSTA_test8_candidate.img.
+Its init ramdisk build uses:
+  qca_cld3_wcn7750-crdroid-dualsta.ko.xz
+
+Files:
+- qca_cld3_wcn7750-crdroid-dualsta.ko
+  Uncompressed patched driver for inspection or rebuilding.
+- qca_cld3_wcn7750-crdroid-dualsta.ko.xz
+  Exact compressed driver payload embedded by the working test8 build.
+- qca_cld3_wcn7750_crDroid_stock.ko
+  Original crDroid driver retained for comparison and rollback work.
+- crdroid_dualsta_preload.sh
+  Early boot patched-driver loader.
+- crdroid-dualsta.rc
+  Init service definition used by the working build.
+- build_test8_candidate.sh
+  Script that assembled the verified init_boot candidate.
+
+These binaries are exact-build files. Recheck kernel/module compatibility before using them with a different ROM build.
