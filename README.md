@@ -1,4 +1,4 @@
-# POCO F7 crDroid Dual STA
+# POCO F7 crDroid Dual STA (DUAL WiFi)
 
 Verified STA+STA backup for **POCO F7 / onyx** running this exact ROM build:
 
